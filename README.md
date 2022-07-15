@@ -2,18 +2,7 @@ LRU
 Una memoria caché de uso menos reciente (LRU) organiza los elementos en orden de uso, lo que le permite identificar rápidamente qué elemento no se ha utilizado durante más tiempo.
 int main()
 {
-    LRU my_buffer(3);
-    char page_a_in_disk = 'a';
-    char * pointer_a = &page_a_in_disk;
-    char page_b_in_disk = 'b';
-    char * pointer_b = &page_b_in_disk;
-    char page_c_in_disk = 'c';
-    char * pointer_c = &page_c_in_disk;
-    char page_d_in_disk = 'd';
-    char * pointer_d = &page_d_in_disk;
-    char page_e_in_disk = 'e';
-    char * pointer_e = &page_e_in_disk;
- 
+
     my_buffer.request_page(pointer_a);
     my_buffer.request_page(pointer_b);
     my_buffer.request_page(pointer_a);
